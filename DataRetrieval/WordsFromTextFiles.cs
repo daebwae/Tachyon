@@ -61,6 +61,9 @@ namespace DataRetrieval
 
                 foreach (var word in words)
                 {
+                    if(word == string.Empty)
+                        continue;
+                    
                     yield return word; 
                 }
             }
