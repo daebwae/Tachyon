@@ -1,5 +1,5 @@
 # Tachyon
-Sub-linear Algorithm in C#
+Sub-linear Algorithms in C#
 
 ## What's sub-linear and why is it cool? 
 
