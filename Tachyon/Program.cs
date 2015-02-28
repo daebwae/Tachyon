@@ -6,7 +6,7 @@ namespace Tachyon
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Brave new Tacyhon world");
+            Console.WriteLine("Brave new Tachyon world");
         }
     }
 }
