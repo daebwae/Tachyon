@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="NaiveDistinctCount.cs" />
     <Compile Include="IDistinctCountAlgorithm.cs" />
+    <Compile Include="NaiveHyperLogLogForDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +49,9 @@
       <Project>{85d79dda-198f-4931-ad16-f16bab08af2b}</Project>
       <Name>Shared</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

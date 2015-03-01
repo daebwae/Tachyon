@@ -1,4 +1,6 @@
-﻿namespace Shared
+﻿using System.Runtime.Serialization;
+
+namespace Shared
 {
     public interface ISequentialAlgorithm<in T>
     {

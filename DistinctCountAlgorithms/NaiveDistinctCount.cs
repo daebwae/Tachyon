@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DistinctCountAlgorithms
 {
+    [Serializable]
     public class NaiveDistinctCount<T>: IDistinctCountAlgorithm<T>
     {
         private readonly HashSet<T> _distinctElements = new HashSet<T>();
@@ -15,5 +17,6 @@ namespace DistinctCountAlgorithms
         {
             _distinctElements.Add(item); 
         }
+
     }
 }

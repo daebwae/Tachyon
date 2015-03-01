@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using DistinctCountAlgorithms;
 
@@ -9,7 +8,6 @@ namespace Tachyon
     {
         public ProfileResult Profile(IDistinctCountAlgorithm<T> algorithm, IEnumerable<T> data)
         {
-            var bytes = GC.GetTotalMemory(true);
             var time = Stopwatch.StartNew();
 
             foreach (var datum in data)
@@ -20,12 +18,14 @@ namespace Tachyon
 
             var distinctElements = algorithm.GetNumberOfDistinctElements(); 
             time.Stop();
-
-
-            bytes = GC.GetTotalMemory(true) - bytes; 
+            
+            
+            var bytes = ProfilingToolbox.SizeOf(algorithm);
             var milisecs = time.ElapsedMilliseconds;
 
             return new ProfileResult(success: true, bytes: bytes, miliseconds: milisecs, result: distinctElements);
         }
+
+
     }
 }

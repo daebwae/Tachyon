@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="DistinctCountProfiler.cs" />
     <Compile Include="ProfileResult.cs" />
+    <Compile Include="ProfilingToolbox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
